@@ -1,0 +1,98 @@
+.Header{
+    height: 60px;
+    display: flex;
+    background-color: #131921;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.Header__logo{
+    width: 150px;
+    object-fit: contain ;
+    height: 60px;
+}
+.Header__search{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    border-radius: 24px;
+}
+.Header__searchIcon{
+    padding: 5px;
+    background-color: #cd9042;
+    height: 22px !important;
+}
+.Header__searchInput{
+    width: 100%;
+    padding: 10px;
+    height: 12px;
+    border: none;
+    outline: none;
+
+
+}
+.Header__options{
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    flex-direction: column;
+    color: white;
+}
+.Header__nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.Header__optionLineOne{
+    font-size: 10px;
+
+}
+.Header__optionLineTwo{
+    font-size: 13px;
+    font-weight: 800;
+}
+.Header__optiionBascket{
+    color: white;
+    display: flex;
+    align-items: center;
+
+}
+.Header__optiionBascketIcon{
+    color: white;
+}
+
+.Header__optionCount {
+    margin-left: 5px;
+    margin-right: 10px;
+    font-size: large;
+    color: white;
+    text-decoration: none;
+    
+}
+.Header__location {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.Header__locationOne{
+    margin-left:10px ;
+}
+.Header__location .Header__location{
+    cursor: pointer;
+}
+.Header__locations{
+    display: flex !important;
+}
+
+
+
+
+@media screen and (max-width:810px) {
+    .Header__locations h3{
+        display: none;
+    }
+    
+}

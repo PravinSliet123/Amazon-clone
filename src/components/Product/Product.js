@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Product.css"
 import {useStateValue} from "../../StateProvider/Stateprovider"
+import { Flipped } from 'react-flip-toolkit'
 
 
 function Product({ title, image, price, rating,id }) {
@@ -19,7 +20,8 @@ const [{basket}, dispatch] = useStateValue()
         })
     }
     return (
-        <div className='product'>
+       <Flipped flipId={basket.id}>
+         <div className='product'>
             <div className="product__info">
                 <p> {title}</p>
                 <p className='product__price'> <small>💲</small>
@@ -40,6 +42,7 @@ const [{basket}, dispatch] = useStateValue()
             onClick={addToBasket}
             className="product__button">Add to Cart</button>
         </div>
+       </Flipped>
     )
 }
 

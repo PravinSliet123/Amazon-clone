@@ -3,6 +3,7 @@ import Subtotal from '../Subtotal/Subtotal'
 import "./Checkout.css"
 import { useStateValue } from '../../StateProvider/Stateprovider'
 import CheckoutProducts from './CheckoutProducts'
+import { Flipped } from 'react-flip-toolkit'
 
 function Checkout() {
   const [{ basket , user}, dispatch] = useStateValue()
@@ -19,13 +20,15 @@ function Checkout() {
           {
             basket.map(item => {
               return (
-                <CheckoutProducts
+                <Flipped flipId={item.id} stagger>
+                  <CheckoutProducts
                   id={item.id}
                   title={item.title}
                   rating={item.rating}
                   price={item.price}
                   image={item.image}
                 />
+                </Flipped>
               )
             })
           }

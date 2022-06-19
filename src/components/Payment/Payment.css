@@ -1,0 +1,29 @@
+.payment{
+    background-color: white;
+}
+.paymet__container h1{
+    text-align: center;
+    padding: 10px;
+    font-weight: 900;
+    background-color: rgba(234, 237,237);
+    border-bottom: 1px solid lightgrey;
+
+}
+.payment__title h3{
+    font-weight: 900;
+}
+.paymet__container h1 a{
+    text-decoration: none;
+}
+.payment__section{
+    display: flex;
+    padding: 20px;
+    margin: 0, 20px;
+    border-bottom: 1px solid lightgrey;
+}
+.payment__title{
+    flex: .2;
+}
+.paymet__address, .payment__items, .payment__details{
+    flex: 0.8;
+}

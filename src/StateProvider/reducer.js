@@ -11,7 +11,6 @@ export const getBasketPrice = (basket) => {
 }
 
 const reducer = (state, action) => {
-    console.log(initialstate.user);
     switch (action.type) {
         case 'ADD_TO_BASKET':
             return {
